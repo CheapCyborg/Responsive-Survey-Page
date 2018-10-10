@@ -3,7 +3,7 @@
 body {
   font-family: sans-serif;
   margin: 0;
-    max-width: 100%;
+  max-width: 100%;
   height: auto;
   background: #eeeeee;
 }
@@ -116,7 +116,7 @@ textarea {
 
 /* When the radio button is checked, add a blue background */
 .container-radio input:checked ~ .checkmark-radio {
-  background-color: #2196F3;
+  background-color: #2196f3;
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
@@ -178,7 +178,7 @@ textarea {
 
 /* When the checkbox is checked, add a blue background */
 .container-checkbox input:checked ~ .checkmark {
-  background-color: #2196F3;
+  background-color: #2196f3;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -204,4 +204,22 @@ textarea {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+@media (max-width: 700px) {
+  #survey-form {
+    width: 50%;
+    margin: auto;
+    padding: 5rem;
+    background: #cecece;
+  }
+}
+
+@media (min-width: 701px) {
+  #survey-form {
+    width: 70%;
+    margin: auto;
+    padding: 5rem;
+    background: #cecece;
+  }
 }
