@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <main>
+        <h1 id="title">Survey Form</h1>
+        <div>
+            <p id="description">What would you like to see in a new Paragon?</p>
+            <form id="survey-form">
+                <label for="name" id="name-label">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name..." required>
+                <br/>
+                <label for="email" id="email-label">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email..." required>
+                <br/>
+                <label for="number" id="number-label">Age:</label>
+                <input type="number" name="number" id="number" placeholder="Age..." min="0" max="120" required>
+                <br/>
+                <br/>
+                <label for="view" id="view">We know a lot of people have their own opinions on the best camera view, so if
+                    you could choose which would you like to see in a new Paragon?</label>
+                <br/>
+                <br/>
+                <select id="dropdown" name="view" required>
+                    <option value="" disabled selected>Select an Option</option>
+                    <option value="Third Person">Third Person</option>
+                    <option value="First Person">First Person</option>
+                    <option value="Birds Eye">Birds Eye</option>
+                </select>
+                <br/>
+                <br/>
+                <label for="map" id="map">What map do you think worked best?
+                    <fieldset required>
+                        <label class="container-radio">
+                            <input type="radio" name="map" value="Legacy" checked>Legacy<br/>
+                            <span class="checkmark-radio"></span>
+                        </label>
+                        <label class="container-radio">
+                            <input type="radio" name="map" value="Monolith">Monolith<br/>
+                            <span class="checkmark-radio"></span>
+                        </label>
+                        <label class="container-radio">
+                            <input type="radio" name="map" value="New">Scrap the old ones and make something new!
+                            <span class="checkmark-radio"></span>
+                        </label>
+                    </fieldset>
+                </label>
+                <br/>
+                <label for="features" id="features">Favorite parts of old Paragon? (Check all that apply)
+                    <fieldset>
+                        <label class="container-checkbox">
+                            <input type="checkbox" name="1" value="Travel Mode">Travel Mode<br/>
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-checkbox">
+                            <input type="checkbox" name="2" value="Jungle Harvesters">Jungle Harvesters<br/>
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-checkbox">
+                            <input type="checkbox" name="3" value="Orb Dunking">Orb Dunking<br/>
+                            <span class="checkmark"></span>
+                        </label>
+                    </fieldset>
+                </label>
+                <br>
+                <textarea placeholder="Any final thoughts?"></textarea>
+                <br/>
+                <input type="submit" id="submit">
+            </form>
+        </div>
+    </main>
+    <link rel="stylesheet" href="styles.css">
+</body>
+
+</html>
